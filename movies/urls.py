@@ -22,4 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home, name='home'),
     path('movies/', views.movies, name='movies'),
+    path('movies/<int:id>', views.details, name='details'),
+    path('movies/add', views.add, name='add'),
+    path('movies/delete/<int:id>', views.delete, name='delete')
 ]

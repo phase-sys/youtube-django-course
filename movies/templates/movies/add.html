@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add</title>
+</head>
+<body>
+    <form action="add" method="POST">
+        {% csrf_token %}
+        <input type="text" name="title" id="title" placeholder="Movie Title"/>
+        <input type="text" name="year" id="year" placeholder="Movie Year"/>
+        <input type="submit" value="Add" />
+    </form>
+</body>
+</html>

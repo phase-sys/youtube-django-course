@@ -11,9 +11,10 @@
 <ul>
     {% for movie in movies %}
     <li>
-        {{ movie.title }}
+        <a href="{{movie.id}}">{{ movie.title }}</a>
     </li>
     {% endfor %}
 </ul>
+    <a href="add">Add</a>
 </body>
 </html>
